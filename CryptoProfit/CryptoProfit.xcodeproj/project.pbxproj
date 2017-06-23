@@ -13,7 +13,19 @@
 		497A681C1EFDC18A00ED2758 /* CryptoProfit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 497A681A1EFDC18A00ED2758 /* CryptoProfit.xcdatamodeld */; };
 		497A681E1EFDC18A00ED2758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497A681D1EFDC18A00ED2758 /* Assets.xcassets */; };
 		497A68211EFDC18A00ED2758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497A681F1EFDC18A00ED2758 /* LaunchScreen.storyboard */; };
+		8CC67F721EFDD17600260AB9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC67F711EFDD17600260AB9 /* Model.swift */; };
+		8CC67F7D1EFDD9EA00260AB9 /* CryptoProfitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC67F7C1EFDD9EA00260AB9 /* CryptoProfitTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CC67F7F1EFDD9EA00260AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 497A68081EFDC18A00ED2758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 497A680F1EFDC18A00ED2758;
+			remoteInfo = CryptoProfit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		497A68101EFDC18A00ED2758 /* CryptoProfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoProfit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,21 @@
 		497A681D1EFDC18A00ED2758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		497A68201EFDC18A00ED2758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		497A68221EFDC18A00ED2758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC67F711EFDD17600260AB9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8CC67F7A1EFDD9E900260AB9 /* CryptoProfitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoProfitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC67F7C1EFDD9EA00260AB9 /* CryptoProfitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoProfitTests.swift; sourceTree = "<group>"; };
+		8CC67F7E1EFDD9EA00260AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		497A680D1EFDC18A00ED2758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC67F771EFDD9E900260AB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				497A68121EFDC18A00ED2758 /* CryptoProfit */,
+				8CC67F7B1EFDD9EA00260AB9 /* CryptoProfitTests */,
 				497A68111EFDC18A00ED2758 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				497A68101EFDC18A00ED2758 /* CryptoProfit.app */,
+				8CC67F7A1EFDD9E900260AB9 /* CryptoProfitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +81,7 @@
 		497A68121EFDC18A00ED2758 /* CryptoProfit */ = {
 			isa = PBXGroup;
 			children = (
+				8CC67F701EFDD15100260AB9 /* Backend */,
 				497A68131EFDC18A00ED2758 /* AppDelegate.swift */,
 				497A68151EFDC18A00ED2758 /* ViewController.swift */,
 				497A68171EFDC18A00ED2758 /* Main.storyboard */,
@@ -65,6 +91,23 @@
 				497A681A1EFDC18A00ED2758 /* CryptoProfit.xcdatamodeld */,
 			);
 			path = CryptoProfit;
+			sourceTree = "<group>";
+		};
+		8CC67F701EFDD15100260AB9 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				8CC67F711EFDD17600260AB9 /* Model.swift */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
+		8CC67F7B1EFDD9EA00260AB9 /* CryptoProfitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CC67F7C1EFDD9EA00260AB9 /* CryptoProfitTests.swift */,
+				8CC67F7E1EFDD9EA00260AB9 /* Info.plist */,
+			);
+			path = CryptoProfitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +130,24 @@
 			productReference = 497A68101EFDC18A00ED2758 /* CryptoProfit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8CC67F791EFDD9E900260AB9 /* CryptoProfitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC67F811EFDD9EA00260AB9 /* Build configuration list for PBXNativeTarget "CryptoProfitTests" */;
+			buildPhases = (
+				8CC67F761EFDD9E900260AB9 /* Sources */,
+				8CC67F771EFDD9E900260AB9 /* Frameworks */,
+				8CC67F781EFDD9E900260AB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CC67F801EFDD9EA00260AB9 /* PBXTargetDependency */,
+			);
+			name = CryptoProfitTests;
+			productName = CryptoProfitTests;
+			productReference = 8CC67F7A1EFDD9E900260AB9 /* CryptoProfitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +162,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = E55286BQ76;
 						ProvisioningStyle = Automatic;
+					};
+					8CC67F791EFDD9E900260AB9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 497A680F1EFDC18A00ED2758;
 					};
 				};
 			};
@@ -118,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				497A680F1EFDC18A00ED2758 /* CryptoProfit */,
+				8CC67F791EFDD9E900260AB9 /* CryptoProfitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +200,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CC67F781EFDD9E900260AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -143,10 +217,27 @@
 				497A681C1EFDC18A00ED2758 /* CryptoProfit.xcdatamodeld in Sources */,
 				497A68161EFDC18A00ED2758 /* ViewController.swift in Sources */,
 				497A68141EFDC18A00ED2758 /* AppDelegate.swift in Sources */,
+				8CC67F721EFDD17600260AB9 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC67F761EFDD9E900260AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC67F7D1EFDD9EA00260AB9 /* CryptoProfitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CC67F801EFDD9EA00260AB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 497A680F1EFDC18A00ED2758 /* CryptoProfit */;
+			targetProxy = 8CC67F7F1EFDD9EA00260AB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		497A68171EFDC18A00ED2758 /* Main.storyboard */ = {
@@ -287,6 +378,32 @@
 			};
 			name = Release;
 		};
+		8CC67F821EFDD9EA00260AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CryptoProfitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.jackbonaguro.CryptoProfitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoProfit.app/CryptoProfit";
+			};
+			name = Debug;
+		};
+		8CC67F831EFDD9EA00260AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CryptoProfitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.jackbonaguro.CryptoProfitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoProfit.app/CryptoProfit";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -307,6 +424,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8CC67F811EFDD9EA00260AB9 /* Build configuration list for PBXNativeTarget "CryptoProfitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC67F821EFDD9EA00260AB9 /* Debug */,
+				8CC67F831EFDD9EA00260AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
